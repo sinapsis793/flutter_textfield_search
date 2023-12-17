@@ -266,8 +266,8 @@ class _TextFieldSearchState extends State<TextFieldSearch> {
             },
             child: ListTile(
                 title: widget.getSelectedValue != null
-                    ? Text(filteredList![i].label,  style: TextStyle(fontSize: 16),)
-                    : Text(filteredList![i],  style: TextStyle(fontSize: 16),)));
+                    ? Text(filteredList![i].label,  style: TextStyle(fontSize: 12),)
+                    : Text(filteredList![i],  style: TextStyle(fontSize: 12),)));
       },
       padding: EdgeInsets.zero,
       shrinkWrap: true,
