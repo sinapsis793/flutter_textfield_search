@@ -235,7 +235,7 @@ class _TextFieldSearchState extends State<TextFieldSearch> {
               FocusScope.of(context).unfocus();
             },
             child: ListTile(
-              title: Text('No matching items.'),
+              title: Text('Tarif bulunamadı.'),
               trailing: Icon(Icons.cancel),
             ),
           ),
@@ -266,8 +266,8 @@ class _TextFieldSearchState extends State<TextFieldSearch> {
             },
             child: ListTile(
                 title: widget.getSelectedValue != null
-                    ? Text(filteredList![i].label)
-                    : Text(filteredList![i])));
+                    ? Text(filteredList![i].label,  style: TextStyle(fontSize: 16),)
+                    : Text(filteredList![i],  style: TextStyle(fontSize: 16),)));
       },
       padding: EdgeInsets.zero,
       shrinkWrap: true,
